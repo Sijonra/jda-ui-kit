@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -24,4 +24,42 @@ If you are developing a production application, we recommend updating the config
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
+
+# JDA UI-KIT
+
+Custom ui-kit with simple demonstration pages.
+
+## Decomposition:
+
+## 1. Preparing project
+
+      1.1. installing vite project
+      1.2. creating github repository
+      1.3. project init on github
+
+## 2. Creating basic file structure
+
+      2.1. - [JDA-0201] create directories for pages and components
+      2.2. - [JDA-0202] create directories for each component and page
+      2.3. - [JDA-0203] create files for each component and page
+
+## 3. Creating UI components
+
+      3.1. - [JDA-0301] making Heading component
+      3.2. - [JDA-0302] making Text component
+      3.2. - [JDA-0303] making Paragraph component
+      3.2. - [JDA-0304] making Button component
+      3.2. - [JDA-0305] making Card component
+      3.2. - [JDA-0306] making Badge component
+      3.2. - [JDA-0307] making Toast component
+
+## 4. Creating pages for components demonstration
+
+      4.1. - [JDA-0401] making Heading page
+      4.2. - [JDA-0402] making Text page
+      4.2. - [JDA-0403] making Paragraph page
+      4.2. - [JDA-0404] making Button page
+      4.2. - [JDA-0405] making Card page
+      4.2. - [JDA-0406] making Badge page
+      4.2. - [JDA-0407] making Toast page
