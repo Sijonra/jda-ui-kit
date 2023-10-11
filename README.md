@@ -41,8 +41,7 @@ Custom ui-kit with simple demonstration pages.
 ## 2. Creating basic file structure
 
       2.1. - [JDA-0201] create directories for pages and components
-      2.2. - [JDA-0202] create directories for each component and page
-      2.3. - [JDA-0203] create files for each component and page
+      2.2. - [JDA-0202] create directories for each component and page / create files for each component and page
 
 ## 3. Creating UI components
 
