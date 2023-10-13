@@ -1,3 +1,5 @@
+@import "./styles/bundle.scss";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,4 +45,10 @@
 
 button {
   margin-bottom: 40px;
+}
+
+.FONT {
+  font-size: 100px;
+  font-family: $font-SF-PRO-DISPLAY;
+  color: $color-red-base;
 }
