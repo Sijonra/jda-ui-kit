@@ -5,7 +5,7 @@ console.log(plus);
 function App() {
   return (
     <>
-      <Button icon={true} text="Label" type={"primary"} />
+      <Button icon={true} text="LabelKKK" type={"primary"} />
       <Button icon={true} text="Label" type={"regular"} />
       <Button icon={true} text="Label" type={"minimal"} />
       <Button icon={true} text="Label" type={"danger"} />
