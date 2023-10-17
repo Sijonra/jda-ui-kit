@@ -46,3 +46,36 @@
 button {
   margin-bottom: 40px;
 }
+
+.button-page__classes_green {
+  width: 60px;
+  height: 60px;
+  background: $color-green-dark !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-black !important;
+  }
+}
+
+.button-page__classes_round {
+  width: 60px;
+  height: 60px;
+  background: $color-yellow-dark !important;
+  border-radius: 200% !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-black !important;
+  }
+}
+
+.button-page__classes_wide {
+  height: 60px;
+  background: $color-green-dark !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-black !important;
+  }
+}

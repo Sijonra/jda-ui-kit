@@ -1,26 +1,27 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import style from "./Button.module.scss";
 
 interface ButtonProps {
   className?: string;
   type: string;
-  text: string;
+  // text?: string;
   icon?: boolean;
   plusLeft?: boolean;
   plusRight?: boolean;
   iDownLeft?: boolean;
   iDownRight?: boolean;
+  children?: React.ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
   className,
   type,
-  text,
   icon,
   plusLeft,
   plusRight,
   iDownLeft,
   iDownRight,
+  children,
 }) => {
   console.log(icon);
   return (
@@ -58,7 +59,7 @@ const Button: FC<ButtonProps> = ({
         ) : (
           ""
         )}
-        <span>{text}</span>
+        <span>{children}</span>
         {plusRight ? (
           <svg
             width="12"
