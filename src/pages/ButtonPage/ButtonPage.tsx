@@ -17,7 +17,7 @@ const ButtonPage = () => {
         <Button type="danger">Button Danger</Button>
       </section>
       <h5 className={style["button-page__subtitle"]}>
-        You can add 2 types of svg icons to your button
+        You can add 2 types of svg icons to your button:
       </h5>
       <section
         className={
@@ -39,7 +39,7 @@ const ButtonPage = () => {
       </section>
       <h5 className={style["button-page__subtitle"]}>
         Also you can add your custom class name with your own styles and your
-        custom svg icon
+        custom svg icon:
       </h5>
       <section
         className={
@@ -85,6 +85,126 @@ const ButtonPage = () => {
             />
           </svg>
         </Button>
+      </section>
+      <section className={style["code"]}>
+        <pre className="line-numbers language-jsx" tabIndex={0}>
+          <code className="language-jsx">
+            <span className="operator">&lt;</span>Button
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>className
+            <span className="operator">?</span>
+            <span className="operator">=</span>string
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>color
+            <span className="operator">?</span>
+            <span className="operator">=</span>
+            <span className="string">'red'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'blue'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'blue-blog'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'dark'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'none'</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>theme
+            <span className="operator">?</span>
+            <span className="operator">=</span>
+            <span className="string">'blog'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'none'</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>shadowColor
+            <span className="operator">?</span>
+            <span className="operator">=</span>
+            <span className="string">'red'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'blue'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'none'</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>outline
+            <span className="operator">?</span>
+            <span className="operator">=</span>
+            <span className="string">'blue'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'none'</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>arrow
+            <span className="operator">?</span>
+            <span className="operator">=</span>
+            <span className="string">'before'</span>
+            <span className="space"> </span>
+            <span className="operator">|</span>
+            <span className="space"> </span>
+            <span className="string">'after'</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>children
+            <span className="operator">=</span>ReactNode
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>fullWidth
+            <span className="operator">?</span>
+            <span className="operator">=</span>boolean
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>small
+            <span className="operator">?</span>
+            <span className="operator">=</span>boolean
+            <span className="lf">{"\n"}</span>
+            <span className="token tab">{"\t"}</span>loading
+            <span className="token operator">?</span>
+            <span className="token operator">=</span>boolean
+            <span className="token lf">{"\n"}</span>
+            <span className="token tab">{"\t"}</span>disabled
+            <span className="token operator">?</span>
+            <span className="token operator">=</span>boolean
+            <span className="token lf">{"\n"}</span>
+            <span className="token operator">&gt;</span>
+            <span className="token lf">{"\n"}</span>
+            <span className="token tab">{"\t"}</span>Content
+            <span className="token lf">{"\n"}</span>
+            <span className="token tag">
+              <span className="token tag">
+                <span className="token punctuation">&lt;/</span>
+                <span className="token class-name">Button</span>
+              </span>
+              <span className="token punctuation">&gt;</span>
+            </span>
+            <span aria-hidden="true" className="line-numbers-rows">
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </span>
+          </code>
+        </pre>
       </section>
     </div>
   );
