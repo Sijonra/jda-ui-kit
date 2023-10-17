@@ -1,14 +1,46 @@
 @import "../../styles/bundle.scss";
 
 .button-page {
+  // background: linear-gradient(102deg, #caecff 1.56%, #647dff 97.85%);
+
+  max-width: 768px;
+  margin: 0 auto;
+  font-family: $font-SF-PRO-DISPLAY;
+  color: $color-page-text;
+
+  &__title {
+    font-size: 54px;
+    color: $color-text-default;
+    background-color: $color-page-shadow;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-size: 20px;
+    color: $color-text-default;
+    @media (max-width: 768px) {
+      //text-align: center;
+      font-size: 14px;
+    }
+  }
+
   &__variants {
-    max-width: 768px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    button {
+      margin-right: 40px;
+    }
 
     @media (max-width: 768px) {
+      width: 320px;
+      margin: 0 auto;
       flex-direction: column;
     }
 
@@ -17,5 +49,9 @@
         margin-bottom: 40px;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 320px;
   }
 }

@@ -53,7 +53,7 @@ const ButtonPage = () => {
           Round Button
         </Button>
 
-        <Button type="primary">
+        <Button type="primary" className="button-page__classes_save">
           <svg
             width="16"
             height="16"
@@ -69,7 +69,7 @@ const ButtonPage = () => {
             />
           </svg>
         </Button>
-        <Button type="primary">
+        <Button type="primary" className="button-page__classes_menu">
           <svg
             width="16"
             height="16"
