@@ -12,6 +12,7 @@
   font-weight: 500;
   line-height: 12px;
   transition: 0.4s;
+  cursor: pointer;
   &:active,
   &:hover {
     color: $color-text-default;
@@ -50,6 +51,12 @@
   text-align: center;
   border-color: rgba(67, 90, 111, 0.14);
   background: linear-gradient(0deg, #116ab8 0%, #0788de 100%);
+
+  svg {
+    path {
+      fill: $color-white;
+    }
+  }
 }
 
 .regular {
@@ -60,7 +67,7 @@
 
   svg {
     path {
-      fill: #425a70;
+      fill: $color-text-default;
     }
   }
 }
@@ -72,7 +79,7 @@
 
   svg {
     path {
-      fill: #1070ca;
+      fill: $color-blue-base;
     }
   }
 }
@@ -85,7 +92,7 @@
 
   svg {
     path {
-      fill: #fff;
+      fill: $color-white;
     }
   }
 }
