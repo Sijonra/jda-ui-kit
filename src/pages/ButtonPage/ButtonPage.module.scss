@@ -55,20 +55,3 @@
     max-width: 320px;
   }
 }
-
-.code {
-  width: 768px;
-  overflow: scroll;
-  background-color: $color-page-bg-code;
-  position: relative;
-  white-space: inherit;
-  font-size: 20px;
-
-  .operator {
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    width: 320px;
-  }
-}

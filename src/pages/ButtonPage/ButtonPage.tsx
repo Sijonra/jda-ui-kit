@@ -1,4 +1,5 @@
 import style from "./ButtonPage.module.scss";
+import codeExample from "../../styles/codeExample.module.scss";
 import Button from "../../components/Button/Button";
 
 const ButtonPage = () => {
@@ -86,107 +87,45 @@ const ButtonPage = () => {
           </svg>
         </Button>
       </section>
-      <section className={style["code"]}>
-        <pre className="line-numbers language-jsx" tabIndex={0}>
-          <code className="language-jsx">
-            <span className="operator">&lt;</span>Button
+      <section>
+        <h5 className={style["button-page__subtitle"]}>
+          How to use it in your code:{" "}
+        </h5>
+        <pre
+          className={codeExample["code"] + " " + "line-numbers language-jsx"}
+          tabIndex={0}
+        >
+          <code>
+            <span className={codeExample["code-operator"]}>&lt;</span>
+            <span className={codeExample["code-red"]}>Button</span>
             <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>
             <span className="tab">{"\t"}</span>className
-            <span className="operator">?</span>
-            <span className="operator">=</span>string
+            <span className={codeExample["code-operator"]}>?</span>
+            <span className={codeExample["code-operator"]}>=</span>string
             <span className="lf">{"\n"}</span>
             <span className="tab">{"\t"}</span>color
-            <span className="operator">?</span>
-            <span className="operator">=</span>
+            <span className={codeExample["code-operator"]}>?</span>
+            <span className={codeExample["code-operator"]}>=</span>
             <span className="string">'red'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'blue'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'blue-blog'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'dark'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'none'</span>
             <span className="lf">{"\n"}</span>
             <span className="tab">{"\t"}</span>theme
-            <span className="operator">?</span>
-            <span className="operator">=</span>
+            <span className={codeExample["code-operator"]}>?</span>
+            <span className={codeExample["code-operator"]}>=</span>
             <span className="string">'blog'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'none'</span>
             <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>shadowColor
-            <span className="operator">?</span>
-            <span className="operator">=</span>
-            <span className="string">'red'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'blue'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'none'</span>
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>outline
-            <span className="operator">?</span>
-            <span className="operator">=</span>
-            <span className="string">'blue'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'none'</span>
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>arrow
-            <span className="operator">?</span>
-            <span className="operator">=</span>
-            <span className="string">'before'</span>
-            <span className="space"> </span>
-            <span className="operator">|</span>
-            <span className="space"> </span>
-            <span className="string">'after'</span>
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>children
-            <span className="operator">=</span>ReactNode
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>fullWidth
-            <span className="operator">?</span>
-            <span className="operator">=</span>boolean
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>small
-            <span className="operator">?</span>
-            <span className="operator">=</span>boolean
-            <span className="lf">{"\n"}</span>
-            <span className="token tab">{"\t"}</span>loading
-            <span className="token operator">?</span>
-            <span className="token operator">=</span>boolean
-            <span className="token lf">{"\n"}</span>
-            <span className="token tab">{"\t"}</span>disabled
-            <span className="token operator">?</span>
-            <span className="token operator">=</span>boolean
-            <span className="token lf">{"\n"}</span>
-            <span className="token operator">&gt;</span>
+            <span className={codeExample["code-operator"]}>&gt;</span>
             <span className="token lf">{"\n"}</span>
             <span className="token tab">{"\t"}</span>Content
             <span className="token lf">{"\n"}</span>
             <span className="token tag">
               <span className="token tag">
-                <span className="token punctuation">&lt;/</span>
-                <span className="token class-name">Button</span>
+                <span className={codeExample["code-operator"]}>&lt;/</span>
+                <span className={codeExample["code-red"]}>Button</span>
               </span>
-              <span className="token punctuation">&gt;</span>
+              <span className={codeExample["code-operator"]}>&gt;</span>
             </span>
-            <span aria-hidden="true" className="line-numbers-rows">
+            {/* <span aria-hidden="true" className="line-numbers-rows">
               <span />
               <span />
               <span />
@@ -202,7 +141,7 @@ const ButtonPage = () => {
               <span />
               <span />
               <span />
-            </span>
+            </span> */}
           </code>
         </pre>
       </section>

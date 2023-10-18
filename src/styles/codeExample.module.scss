@@ -1,0 +1,20 @@
+@import "./bundle.scss";
+
+.code {
+  width: 768px;
+  overflow: auto;
+  background-color: $color-page-bg-code;
+  // position: relative;
+  // white-space: inherit;
+  // font-size: 20px;
+
+  &-operator {
+    color: $color-code-operator;
+  }
+  &-red {
+    color: $color-red-base;
+  }
+  @media (max-width: 768px) {
+    width: 320px;
+  }
+}
