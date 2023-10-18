@@ -1,10 +1,12 @@
 import "./App.scss";
-import Card from "./components/Card/Card";
 
+import ButtonPage from "./pages/ButtonPage/ButtonPage";
+import plus from "./assets/svg/plus.svg";
+console.log(plus);
 function App() {
   return (
     <>
-      <Card elevation={0} title={"Card / Elevation 0"} text={"Flat Cards"} />
+      <ButtonPage />
     </>
   );
 }
