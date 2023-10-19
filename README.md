@@ -65,3 +65,4 @@ Custom ui-kit with simple demonstration pages.
       4.7. - [JDA-0407] making Toast page
       4.8. - [JDA-0408] making Greeting page
       4.9. - [JDA-0409] making Heading page
+      4.10. - [JDA-0410] creating menu component

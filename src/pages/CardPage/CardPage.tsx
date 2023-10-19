@@ -1,10 +1,12 @@
 import style from "./CardPage.module.scss";
 import codeExample from "../../styles/codeExample.module.scss";
 import Card from "../../components/Card/Card";
+import Menu from "../../components/Menu/Menu";
 
 const CardPage = () => {
   return (
     <div className={style["card-page"]}>
+      <Menu />
       <h1 className={style["card-page__title"]}>UI Kit / Cards</h1>
       <h5 className={style["card-page__subtitle"]}>
         Default cards with title and subtitle:{" "}
