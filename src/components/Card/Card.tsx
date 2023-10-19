@@ -16,7 +16,6 @@ const Card: FC<CardProps> = ({
   children,
   className,
 }) => {
-  console.log("card_" + elevation.toString());
   return (
     <>
       <div
@@ -29,7 +28,7 @@ const Card: FC<CardProps> = ({
         }
       >
         <h3 className={style["card__title"]}>{title}</h3>
-        <p className={style["card__subtitle"]}>{subtitle}</p>
+        <h5 className={style["card__subtitle"]}>{subtitle}</h5>
         <div className={style["card__content"]}>{children}</div>
       </div>
     </>

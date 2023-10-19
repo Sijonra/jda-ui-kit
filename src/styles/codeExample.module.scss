@@ -1,20 +1,67 @@
 @import "./bundle.scss";
 
 .code {
-  width: 768px;
-  overflow: auto;
+  //max-width: 768px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 auto;
   background-color: $color-page-bg-code;
+  border-radius: 8px;
   // position: relative;
   // white-space: inherit;
   // font-size: 20px;
 
-  &-operator {
+  &__code {
+    margin-left: 40px;
+  }
+
+  &__operator {
     color: $color-code-operator;
   }
-  &-red {
+
+  &__red {
     color: $color-red-base;
   }
+
+  &__attr-name {
+    color: $color-code-attr-name;
+  }
+
+  &__attr-value {
+    color: $color-code-attr-value;
+  }
+
+  &__line-numbers {
+    position: relative;
+  }
+
   @media (max-width: 768px) {
     width: 320px;
+  }
+}
+.line-numbers {
+  user-select: none;
+  &__rows {
+    position: absolute;
+    pointer-events: none;
+    top: -126px;
+    font-size: 100%;
+    left: -130px;
+    width: 40px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #efeae7 !important;
+    margin-top: -0.6rem !important;
+    padding: 0.5rem 0 !important;
+    border-right: none !important;
+    span {
+      margin-left: 24px;
+      color: $color-text-default;
+      display: block;
+      counter-increment: linenumber;
+    }
   }
 }
