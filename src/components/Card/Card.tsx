@@ -6,14 +6,27 @@ interface CardProps {
   title?: string;
   subtitle?: string;
   children?: React.ReactNode;
+  className?: string;
 }
 
-const Card: FC<CardProps> = ({ elevation, title, subtitle, children }) => {
+const Card: FC<CardProps> = ({
+  elevation,
+  title,
+  subtitle,
+  children,
+  className,
+}) => {
   console.log("card_" + elevation.toString());
   return (
     <>
       <div
-        className={style["card"] + " " + style["card_" + elevation.toString()]}
+        className={
+          style["card"] +
+          " " +
+          style["card_" + elevation.toString()] +
+          " " +
+          className
+        }
       >
         <h3 className={style["card__title"]}>{title}</h3>
         <p className={style["card__subtitle"]}>{subtitle}</p>
