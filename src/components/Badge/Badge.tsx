@@ -1,0 +1,30 @@
+import { FC } from "react";
+import style from "./Badge.module.scss";
+
+interface BadgeProps {
+  className?: string;
+  type: string;
+  theme: string;
+  color: string;
+  text: string;
+}
+
+const Badge: FC<BadgeProps> = ({ type, theme, color, text }) => {
+  return (
+    <div
+      className={
+        style["badge"] +
+        " " +
+        style[theme] +
+        " " +
+        style[theme + "_" + color] +
+        " " +
+        style["badge_" + type]
+      }
+    >
+      <span className={style["badge__text"]}>{text}</span>
+    </div>
+  );
+};
+
+export default Badge;

@@ -1,0 +1,133 @@
+@import "../../styles/bundle.scss";
+
+.badge {
+  font-size: 11px;
+  font-family: $font-SF-PRO-DISPLAY;
+  display: inline-flex;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding: 0px 0.5em;
+  align-items: center;
+  background-color: $color-border-default;
+  border-radius: 2px;
+
+  &__text {
+    color: $color-text-default;
+    text-align: center;
+    font-family: $font-SF-PRO-TEXT;
+    font-weight: 700;
+    line-height: 1.45em; /* 145.455% */
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+
+  &_pill {
+    font-size: 11px;
+    border-radius: 0.73em;
+    padding: 0 0.73em;
+  }
+}
+
+.solid {
+  &_neutral {
+    background-color: $color-text-default;
+  }
+
+  &_green {
+    background-color: $color-green-base;
+  }
+
+  &_blue {
+    background-color: $color-blue-base;
+  }
+
+  &_red {
+    background-color: $color-red-base;
+  }
+
+  &_orange {
+    background-color: $color-orange-base;
+  }
+
+  &_purple {
+    background-color: $color-purple-base;
+  }
+
+  &_yellow {
+    background-color: $color-yellow-base;
+  }
+
+  &_teal {
+    background-color: $color-teal-base;
+  }
+
+  .badge__text {
+    color: $color-white;
+  }
+}
+
+.subtle {
+  &_neutral {
+    background-color: $color-border-default;
+
+    .badge__text {
+      color: $color-text-default;
+    }
+  }
+
+  &_green {
+    background-color: $color-green-light;
+
+    .badge__text {
+      color: $color-green-dark;
+    }
+  }
+
+  &_blue {
+    background-color: $color-blue-light;
+
+    .badge__text {
+      color: $color-blue-dark;
+    }
+  }
+
+  &_red {
+    background-color: $color-red-light;
+
+    .badge__text {
+      color: $color-red-dark;
+    }
+  }
+
+  &_orange {
+    background-color: $color-orange-light;
+
+    .badge__text {
+      color: $color-orange-dark;
+    }
+  }
+
+  &_purple {
+    background-color: $color-purple-light;
+
+    .badge__text {
+      color: $color-purple-dark;
+    }
+  }
+
+  &_yellow {
+    background-color: $color-yellow-light;
+
+    .badge__text {
+      color: $color-yellow-dark;
+    }
+  }
+
+  &_teal {
+    background-color: $color-teal-light;
+
+    .badge__text {
+      color: $color-teal-dark;
+    }
+  }
+}
