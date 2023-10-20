@@ -9,7 +9,7 @@ interface BadgeProps {
   text: string;
 }
 
-const Badge: FC<BadgeProps> = ({ type, theme, color, text }) => {
+const Badge: FC<BadgeProps> = ({ className, type, theme, color, text }) => {
   return (
     <div
       className={
@@ -19,7 +19,9 @@ const Badge: FC<BadgeProps> = ({ type, theme, color, text }) => {
         " " +
         style[theme + "_" + color] +
         " " +
-        style["badge_" + type]
+        style["badge_" + type] +
+        " " +
+        className
       }
     >
       <span className={style["badge__text"]}>{text}</span>
