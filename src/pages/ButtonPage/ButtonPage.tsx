@@ -1,10 +1,12 @@
 import style from "./ButtonPage.module.scss";
 import codeExample from "../../styles/codeExample.module.scss";
 import Button from "../../components/Button/Button";
+import Menu from "../../components/Menu/Menu";
 
 const ButtonPage = () => {
   return (
     <div className={style["button-page"]}>
+      <Menu />
       <h1 className={style["button-page__title"]}>UI Kit / Button</h1>
       <h5 className={style["button-page__subtitle"]}>Button Variants: </h5>
       <section
@@ -87,61 +89,84 @@ const ButtonPage = () => {
           </svg>
         </Button>
       </section>
+      <h5 className={style["button-page__subtitle"]}>
+        How to use it in your code:{" "}
+      </h5>
       <section>
-        <h5 className={style["button-page__subtitle"]}>
-          How to use it in your code:{" "}
-        </h5>
         <pre
           className={codeExample["code"] + " " + "line-numbers language-jsx"}
           tabIndex={0}
         >
           <code>
-            <span className={codeExample["code-operator"]}>&lt;</span>
-            <span className={codeExample["code-red"]}>Button</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__operator"]}>&lt;</span>
+            <span className={codeExample["code__red"]}>Button</span>
             <span className="lf">{"\n"}</span>
             <span className="tab">{"\t"}</span>
-            <span className="tab">{"\t"}</span>className
-            <span className={codeExample["code-operator"]}>?</span>
-            <span className={codeExample["code-operator"]}>=</span>string
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__attr-name"]}>className</span>
+            <span className={codeExample["code__operator"]}>?</span>
+            <span className={codeExample["code__operator"]}>=</span>
+            <span className={codeExample["code__attr-value"]}>string</span>
             <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>color
-            <span className={codeExample["code-operator"]}>?</span>
-            <span className={codeExample["code-operator"]}>=</span>
-            <span className="string">'red'</span>
-            <span className="lf">{"\n"}</span>
-            <span className="tab">{"\t"}</span>theme
-            <span className={codeExample["code-operator"]}>?</span>
-            <span className={codeExample["code-operator"]}>=</span>
-            <span className="string">'blog'</span>
-            <span className="lf">{"\n"}</span>
-            <span className={codeExample["code-operator"]}>&gt;</span>
-            <span className="token lf">{"\n"}</span>
-            <span className="token tab">{"\t"}</span>Content
-            <span className="token lf">{"\n"}</span>
-            <span className="token tag">
-              <span className="token tag">
-                <span className={codeExample["code-operator"]}>&lt;/</span>
-                <span className={codeExample["code-red"]}>Button</span>
-              </span>
-              <span className={codeExample["code-operator"]}>&gt;</span>
+            <span className="tab">{"\t"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__attr-name"]}>type</span>
+            <span className={codeExample["code__operator"]}>?=</span>
+            <span className={codeExample["code__attr-value"]}>
+              primary | regular | minimal | danger
             </span>
-            {/* <span aria-hidden="true" className="line-numbers-rows">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </span> */}
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__attr-name"]}>
+              plusLeft | plusRight
+            </span>
+            <span className={codeExample["code__operator"]}>?</span>
+            <span className={codeExample["code__operator"]}>=</span>
+            <span className={codeExample["code__attr-value"]}>boolean</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__attr-name"]}>
+              iDownLeft | iDownRight
+            </span>
+            <span className={codeExample["code__operator"]}>?</span>
+            <span className={codeExample["code__operator"]}>=</span>
+            <span className={codeExample["code__attr-value"]}>boolean</span>
+            <span className="lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__operator"]}>&gt;</span>
+            <span className="token lf">{"\n"}</span>
+            <span className="token tab">{"\t"}</span>
+            <span className="tab">{"\t"}</span>
+            your content, text, img, svg, or react node
+            <span className="token lf">{"\n"}</span>
+            <span className="tab">{"\t"}</span>
+            <span className={codeExample["code__operator"]}>&lt;/</span>
+            <span className={codeExample["code__red"]}>Button</span>
+            <span className={codeExample["code__operator"]}>&gt;</span>
+            <span
+              className={
+                codeExample["line-numbers"] +
+                " " +
+                codeExample["code__line-numbers"]
+              }
+            >
+              <span
+                aria-hidden="true"
+                className={codeExample["line-numbers__rows"]}
+              >
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+              </span>
+            </span>
           </code>
         </pre>
       </section>

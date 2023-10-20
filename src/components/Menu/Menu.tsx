@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import style from "./Menu.module.scss";
 
 const Menu = () => {
@@ -47,13 +48,29 @@ const Menu = () => {
         <h2 className={style["menu__title"]}>DOCS MENU</h2>
         <nav className={style["nav"] + " " + style["menu__nav"]}>
           <ul className={style["nav__list"]}>
-            <li className={style["nav__item"]}>Headings</li>
-            <li className={style["nav__item"]}>Text</li>
-            <li className={style["nav__item"]}>Paragraphs</li>
-            <li className={style["nav__item"]}>Buttons</li>
-            <li className={style["nav__item"]}>Cards</li>
-            <li className={style["nav__item"]}>Badges</li>
-            <li className={style["nav__item"]}>Toast</li>
+            <Link to={"/heading"}>
+              <li className={style["nav__item"]}>Headings</li>
+            </Link>
+            <Link to={"/text"}>
+              <li className={style["nav__item"]}>Text</li>
+            </Link>
+            <Link to={"/paragraph"}>
+              <li className={style["nav__item"]}>Paragraphs</li>
+            </Link>
+
+            <Link to={"/button"}>
+              <li className={style["nav__item"]}>Buttons</li>
+            </Link>
+            <Link to={"/card"}>
+              <li className={style["nav__item"]}>Cards</li>
+            </Link>
+
+            <Link to={"/badge"}>
+              <li className={style["nav__item"]}>Badges</li>
+            </Link>
+            <Link to={"/toast"}>
+              <li className={style["nav__item"]}>Toast</li>
+            </Link>
           </ul>
         </nav>
       </header>
