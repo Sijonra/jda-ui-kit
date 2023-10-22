@@ -11,7 +11,7 @@ interface ToastProps {
 const Toast: FC<ToastProps> = ({ className, type, title, text }) => {
   console.log(className, type);
   return (
-    <div className={style["toast"] + " " + style["toast__" + type]}>
+    <div className={style["toast"] + " " + style["toast__" + type] + " " + className}>
       <div className={style["toast__heading"]}>
         {type === "success" && (
           <svg
