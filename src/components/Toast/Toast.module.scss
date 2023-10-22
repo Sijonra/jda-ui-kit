@@ -2,6 +2,7 @@
 
 .toast {
   font-size: 14px;
+  position: relative;
   display: inline-block;
   max-width: 535px;
   padding: 0.86em 1.4em 0.86em 1.6em;
@@ -29,6 +30,7 @@
     line-height: 1.42857em;
     letter-spacing: -0.05px;
     color: $color-text-dark;
+    margin-right: 25px;
   }
 
   &__warning {
@@ -44,7 +46,10 @@
   }
 
   &__close {
-    margin-left: 25px;
+    position: absolute;
+    right: 10px;
+    top: 1.1em;
+    //margin-left: 25px;
     width: 1em;
     height: 1em;
     cursor: pointer;
