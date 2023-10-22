@@ -2,7 +2,7 @@
   font-family: "SF Pro Display";
   src: local("../assets/fonts/SF-PRO/SF-Pro-Display-Medium.woff"),
     url("../assets/fonts/SF-PRO/SF-Pro-Display-Medium.woff");
-  font-weight: 500;
+  font-weight: 300, 400, 500, 600, 700, 800, 900;
   font-style: normal;
 }
 
@@ -10,6 +10,6 @@
   font-family: "SF Pro Text";
   src: local("../assets/fonts/SF-PRO/sf-pro-text-medium.woff"),
     url("../assets/fonts/SF-PRO/sf-pro-text-medium.woff");
-  font-weight: 900;
+  font-weight: 300, 400, 500, 600, 700, 800, 900;
   font-style: normal;
 }
