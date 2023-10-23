@@ -6,7 +6,7 @@ import codeExample from "../../styles/codeExample.module.scss";
 const HeadingPage = () => {
   return (
     <div className={style["heading-page"]}>
-      <Menu />
+      <Menu page="headings" />
 
       <h1 className={style["heading-page__title"]}>UI Kit / Headings</h1>
       <h5 className={style["heading-page__subtitle"]}>
@@ -49,7 +49,7 @@ const HeadingPage = () => {
       </section>
 
       <h5 className={style["heading-page__subtitle"]}>
-        How to use it in your code:{" "}
+        How to use it in your code:
       </h5>
       <section>
         <pre

@@ -7,7 +7,7 @@ import codeExample from "../../styles/codeExample.module.scss";
 const TextPage = () => {
   return (
     <div className={style["text-page"]}>
-      <Menu />
+      <Menu page="text" />
 
       <h1 className={style["text-page__title"]}>UI Kit / Headings</h1>
       <h5 className={style["text-page__subtitle"]}>Types of text:</h5>

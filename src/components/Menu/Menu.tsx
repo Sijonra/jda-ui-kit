@@ -1,13 +1,26 @@
 import { useState } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import style from "./Menu.module.scss";
 
-const Menu = () => {
+interface MenuProps {
+  page?: string;
+}
+
+const Menu: FC<MenuProps> = ({ page }) => {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <aside className={isOpen ? style.menu : style["menu_close"]}>
+    <aside
+      className={
+        isOpen ? style.menu : style["menu"] + " " + style["menu_close"]
+      }
+    >
       <div
-        className={style["menu-button"]}
+        className={
+          isOpen
+            ? style["menu__button"] + " " + style["menu__button_open"]
+            : style["menu__button"] + " " + style["menu__button_close"]
+        }
         onClick={() => {
           setIsOpen(!isOpen);
         }}
@@ -34,48 +47,111 @@ const Menu = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M1 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1H1C0.45 1 0 1.45 0 2C0 2.55 0.45 3 1 3ZM13 13H1C0.45 13 0 13.45 0 14C0 14.55 0.45 15 1 15H13C13.55 15 14 14.55 14 14C14 13.45 13.55 13 13 13ZM9 6H1C0.45 6 0 5.55 0 5C0 4.45 0.45 4 1 4H9C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6ZM15 7H1C0.45 7 0 7.45 0 8C0 8.55 0.45 9 1 9H15C15.55 9 16 8.55 16 8C16 7.45 15.55 7 15 7ZM5 12H1C0.45 12 0 11.55 0 11C0 10.45 0.45 10 1 10H5C5.55 10 6 10.45 6 11C6 11.55 5.55 12 5 12Z"
               fill="#fff"
             />
           </svg>
         )}
       </div>
-      <header>
+      <div>
         {" "}
         <h2 className={style["menu__title"]}>DOCS MENU</h2>
         <nav className={style["nav"] + " " + style["menu__nav"]}>
           <ul className={style["nav__list"]}>
             <Link to={"/"}>
-              <li className={style["nav__item"]}>Title Page</li>
+              <li
+                className={
+                  page === "title"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Title Page
+              </li>
             </Link>
             <Link to={"/heading"}>
-              <li className={style["nav__item"]}>Headings</li>
+              <li
+                className={
+                  page === "headings"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Headings
+              </li>
             </Link>
             <Link to={"/text"}>
-              <li className={style["nav__item"]}>Text</li>
+              <li
+                className={
+                  page === "text"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Text
+              </li>
             </Link>
             <Link to={"/paragraph"}>
-              <li className={style["nav__item"]}>Paragraphs</li>
+              <li
+                className={
+                  page === "paragraph"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Paragraphs
+              </li>
             </Link>
-
             <Link to={"/button"}>
-              <li className={style["nav__item"]}>Buttons</li>
+              <li
+                className={
+                  page === "buttons"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Buttons
+              </li>
             </Link>
             <Link to={"/card"}>
-              <li className={style["nav__item"]}>Cards</li>
+              <li
+                className={
+                  page === "cards"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Cards
+              </li>
             </Link>
-
             <Link to={"/badge"}>
-              <li className={style["nav__item"]}>Badges</li>
+              <li
+                className={
+                  page === "badges"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Badges
+              </li>
             </Link>
             <Link to={"/toast"}>
-              <li className={style["nav__item"]}>Toast</li>
+              <li
+                className={
+                  page === "toast"
+                    ? style["nav__item"] + " " + style["nav__item_active"]
+                    : style["nav__item"]
+                }
+              >
+                Toast
+              </li>
             </Link>
           </ul>
         </nav>
-      </header>
+      </div>
+      <div></div>
     </aside>
   );
 };

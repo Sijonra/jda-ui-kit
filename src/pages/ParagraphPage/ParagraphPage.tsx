@@ -7,7 +7,7 @@ import codeExample from "../../styles/codeExample.module.scss";
 const ParagraphPage = () => {
   return (
     <div className={style["paragraph-page"]}>
-      <Menu />
+      <Menu page="paragraph" />
 
       <h1 className={style["paragraph-page__title"]}>UI Kit / Paragraphs</h1>
       <h5 className={style["paragraph-page__subtitle"]}>

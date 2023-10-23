@@ -7,7 +7,7 @@ import codeExample from "../../styles/codeExample.module.scss";
 const BadgePage = () => {
   return (
     <div className={style["badge-page"]}>
-      <Menu />
+      <Menu page="badges" />
       <h1 className={style["badge-page__title"]}>UI Kit / Badges</h1>
       <section>
         <h5 className={style["badge-page__subtitle"]}>Solid badge:</h5>

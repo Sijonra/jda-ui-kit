@@ -6,7 +6,7 @@ import Menu from "../../components/Menu/Menu";
 const CardPage = () => {
   return (
     <div className={style["card-page"]}>
-      <Menu />
+      <Menu page="cards" />
       <h1 className={style["card-page__title"]}>UI Kit / Cards</h1>
       <h5 className={style["card-page__subtitle"]}>
         Default cards with title and subtitle:{" "}

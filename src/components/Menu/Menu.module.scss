@@ -6,25 +6,27 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100svh;
+  height: 100%;
   background: $color-page-bg-dark;
   z-index: 100;
-  -moz-animation-delay: 3.5s;
-  -webkit-animation-delay: 3.5s;
-  -o-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  transition: all 0.4s;
 
   &__title {
     font-family: $font-SF-PRO-DISPLAY;
-    color: $color-page-text;
+    color: $color-white;
     font-size: 32px;
     margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
-  &-button {
+  &__button {
     position: absolute;
-    top: 6%;
-    left: 100%;
+    top: 0;
+    left: 260px;
+    z-index: 101;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,9 +37,9 @@
   }
 
   &_close {
-    animation: ease 10s;
+    transform: translateX(-100%);
+    transition: all 0.4s;
     position: absolute;
-    left: -200px;
   }
 }
 
@@ -61,9 +63,13 @@
     border-radius: 4px;
     color: $color-white;
     text-decoration: none;
+    margin-bottom: 40px;
     cursor: pointer;
 
-    margin-bottom: 40px;
+    &_active {
+      color: $color-text-default;
+      background: $color-page-shadow;
+    }
 
     &:hover {
       color: $color-text-default;
