@@ -59,7 +59,7 @@ const BadgePage = () => {
 
       <section>
         <h5 className={style["badge-page__subtitle"]}>
-          Badge with your classNames
+          Badge with your classNames:
         </h5>
         <Badge
           type="badge"
