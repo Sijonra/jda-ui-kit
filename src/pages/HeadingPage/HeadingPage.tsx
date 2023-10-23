@@ -1,9 +1,10 @@
 import Menu from "../../components/Menu/Menu";
 import Heading from "../../components/Heading/Heading";
+import style from "./HeadingPage.module.scss";
 
 const HeadingPage = () => {
   return (
-    <>
+    <div className={style["heading-page"]}>
       <Menu /> 
 
       <Heading type="jumbo">
@@ -41,7 +42,7 @@ const HeadingPage = () => {
       <Heading type="lowest">
         Lowest level headings. Used to group items in a sidebar.
       </Heading>
-    </>
+    </div>
   );
 };
 export default HeadingPage;
