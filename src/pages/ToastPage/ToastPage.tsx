@@ -6,11 +6,17 @@ import Toast from "../../components/Toast/Toast";
 const ToastPage = () => {
   return (
     <div className={style["toast-page"]}>
-      <Menu />
+      <Menu page="toast" />
       <h1 className={style["toast-page__title"]}>UI Kit / Toast</h1>
-      <h5 className={style["toast-page__subtitle"]}>There are 4 types of toasts:</h5>
+      <h5 className={style["toast-page__subtitle"]}>
+        There are 4 types of toasts:
+      </h5>
 
-      <section className={style["toasts-primary"] + " " + style["toast-page__examples"]}>
+      <section
+        className={
+          style["toasts-primary"] + " " + style["toast-page__examples"]
+        }
+      >
         <Toast type="success" title="success" />
         <Toast type="warning" title="warning" />
         <Toast type="danger" title="danger" />
@@ -18,7 +24,9 @@ const ToastPage = () => {
       </section>
 
       <section className={style["toast-page__examples"]}>
-      <h5 className={style["toast-page__subtitle"]}>Also you can add additional text:</h5>
+        <h5 className={style["toast-page__subtitle"]}>
+          Also you can add additional text:
+        </h5>
         <Toast
           type="info"
           title="You have successfully enabled Personas."
@@ -35,7 +43,9 @@ const ToastPage = () => {
       </section>
 
       <section>
-        <h5 className={style["toast-page__subtitle"]}>How to use it in your code:</h5>
+        <h5 className={style["toast-page__subtitle"]}>
+          How to use it in your code:
+        </h5>
         <pre
           className={codeExample["code"] + " " + "line-numbers language-jsx"}
           tabIndex={0}
@@ -62,18 +72,14 @@ const ToastPage = () => {
             <span className="lf">{"\n"}</span>
             <span className="tab">{"\t"}</span>
             <span className="tab">{"\t"}</span>
-            <span className={codeExample["code__attr-name"]}>
-              title
-            </span>
+            <span className={codeExample["code__attr-name"]}>title</span>
             <span className={codeExample["code__operator"]}>?</span>
             <span className={codeExample["code__operator"]}>=</span>
             <span className={codeExample["code__attr-value"]}>string</span>
             <span className="lf">{"\n"}</span>
             <span className="tab">{"\t"}</span>
             <span className="tab">{"\t"}</span>
-            <span className={codeExample["code__attr-name"]}>
-              text
-            </span>
+            <span className={codeExample["code__attr-name"]}>text</span>
             <span className={codeExample["code__operator"]}>?</span>
             <span className={codeExample["code__operator"]}>=</span>
             <span className={codeExample["code__attr-value"]}>string</span>
@@ -105,7 +111,6 @@ const ToastPage = () => {
           </code>
         </pre>
       </section>
-
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Menu from "../../components/Menu/Menu";
 const ButtonPage = () => {
   return (
     <div className={style["button-page"]}>
-      <Menu />
+      <Menu page="buttons" />
       <h1 className={style["button-page__title"]}>UI Kit / Button</h1>
       <h5 className={style["button-page__subtitle"]}>Button Variants: </h5>
       <section

@@ -5,7 +5,7 @@ import Heading from "../../components/Heading/Heading";
 const TitlePage = () => {
   return (
     <section className={style["title-page"]}>
-      <Menu />
+      <Menu page="title" />
       <Heading type="jumbo" className={style["title-page__title"]}>
         UI KIT
       </Heading>
