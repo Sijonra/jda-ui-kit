@@ -66,3 +66,4 @@ Custom ui-kit with simple demonstration pages.
       4.8. - [JDA-0408] making Greeting page
       4.9. - [JDA-0409] making Heading page
       4.10. - [JDA-0410] creating menu component
+      4.11. - [JDA-0411] creating title page

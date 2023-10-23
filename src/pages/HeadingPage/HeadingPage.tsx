@@ -14,7 +14,7 @@ const HeadingPage = () => {
       </h5>
 
       <section className={style["heading-page__examples"]}>
-        <span>tpye === jumbo</span>
+        <span>type === jumbo</span>
         <Heading type="jumbo">Jumbo Titles. When You Feel Funky</Heading>
 
         <span>type === oversized</span>
