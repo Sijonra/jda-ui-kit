@@ -4,7 +4,6 @@ import style from "./Menu.module.scss";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(true);
-  console.log(isOpen);
   return (
     <aside className={isOpen ? style.menu : style["menu_close"]}>
       <div

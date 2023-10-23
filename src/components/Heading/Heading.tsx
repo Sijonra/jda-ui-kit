@@ -2,90 +2,115 @@ import style from "./Heading.module.scss";
 import { FC } from "react";
 
 interface HeadingProps {
-    className?: string;
-    type: string;
-    children?: React.ReactNode;
+  className?: string;
+  type: string;
+  children?: React.ReactNode;
 }
 
-const Heading:FC<HeadingProps> = ({className, type, children}) =>{
-    console.log(className, type)
-    return(
-        <div className={style["heading"] + " " + className}>
-
-            {
-                type === "jumbo" &&
-                (
-                    <h1 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h1>
-                )
-            }
-            {
-                type === "oversized" &&
-                (
-                    <h2 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h2>
-                )
-            }
-            {
-                type === "introduction" &&
-                (
-                    <h3 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h3>
-                )
-            }
-            {
-                type === "key" &&
-                (
-                    <h4 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h4>
-                )
-            }
-            {
-                type === "sub" &&
-                (
-                    <h5 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h5>
-                )
-            }
-            {
-                type === "deep" &&
-                (
-                    <h5 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h5>
-                )
-            }
-            {
-                type === "list-item" &&
-                (
-                    <h5 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h5>
-                )
-            }
-            {
-                type === "low" &&
-                (
-                    <h5 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h5>
-                )
-            }
-            {
-                type === "lowest" &&
-                (
-                    <h5 className={style["heading__item_" + type]  + " " + style["heading__item_" + type]}>
-                        {children}
-                    </h5>
-                )
-            }
-        </div>
-    )
-}
+const Heading: FC<HeadingProps> = ({ className, type, children }) => {
+  return (
+    <div className={style["heading"] + " " + className}>
+      {type === "jumbo" && (
+        <h1
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h1>
+      )}
+      {type === "oversized" && (
+        <h2
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h2>
+      )}
+      {type === "introduction" && (
+        <h3
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h3>
+      )}
+      {type === "key" && (
+        <h4
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h4>
+      )}
+      {type === "sub" && (
+        <h5
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h5>
+      )}
+      {type === "deep" && (
+        <h5
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h5>
+      )}
+      {type === "list-item" && (
+        <h5
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h5>
+      )}
+      {type === "low" && (
+        <h5
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h5>
+      )}
+      {type === "lowest" && (
+        <h5
+          className={
+            style["heading__item_" + type] +
+            " " +
+            style["heading__item_" + type]
+          }
+        >
+          {children}
+        </h5>
+      )}
+    </div>
+  );
+};
 
 export default Heading;

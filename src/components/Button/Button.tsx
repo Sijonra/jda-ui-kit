@@ -4,7 +4,6 @@ import style from "./Button.module.scss";
 interface ButtonProps {
   className?: string;
   type: string;
-  // text?: string;
   icon?: boolean;
   plusLeft?: boolean;
   plusRight?: boolean;
@@ -16,14 +15,12 @@ interface ButtonProps {
 const Button: FC<ButtonProps> = ({
   className,
   type,
-  icon,
   plusLeft,
   plusRight,
   iDownLeft,
   iDownRight,
   children,
 }) => {
-  console.log(icon);
   return (
     <div className={style.buttonOuter}>
       <button className={style["button"] + " " + style[type] + " " + className}>

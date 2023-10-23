@@ -66,3 +66,11 @@ Custom ui-kit with simple demonstration pages.
       4.8. - [JDA-0408] making title page
       4.9. - [JDA-0409] making Heading page
       4.10. - [JDA-0410] creating menu component
+
+## 5. Testing and fixing
+
+      5.1. - [JDA-0501] testing app
+      5.2. - [JDA-0502] fixing console errors and removing console logs
+      5.3. - [JDA-0503] fixing menu
+      5.4. - [JDA-0504] fixing code examples
+      5.5. - [JDA-0505] fixing fonts issue
