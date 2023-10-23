@@ -1,0 +1,35 @@
+@mixin page-desktop {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: $font-SF-PRO-DISPLAY;
+
+  &__title {
+    font-size: 54px;
+    margin-bottom: 40px;
+    text-align: left;
+    color: $color-text-default;
+    background-color: $color-page-shadow;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      width: 300px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-align: left;
+    color: $color-text-default;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

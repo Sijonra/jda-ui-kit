@@ -1,0 +1,13 @@
+@import "../../styles/bundle.scss";
+
+.title-page {
+  @include page-desktop;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+}

@@ -48,6 +48,9 @@ const Menu = () => {
         <h2 className={style["menu__title"]}>DOCS MENU</h2>
         <nav className={style["nav"] + " " + style["menu__nav"]}>
           <ul className={style["nav__list"]}>
+            <Link to={"/"}>
+              <li className={style["nav__item"]}>Title Page</li>
+            </Link>
             <Link to={"/heading"}>
               <li className={style["nav__item"]}>Headings</li>
             </Link>

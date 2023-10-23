@@ -1,33 +1,9 @@
 @import "../../styles/bundle.scss";
 
 .toast-page {
-  padding: 40px 0;
-  max-width: 768px;
-  margin: 0 auto;
-  font-family: $font-SF-PRO-DISPLAY;
+  @include page-desktop;
 
-  &__title {
-    font-size: 54px;
-    color: $color-text-default;
-    background-color: $color-page-shadow;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
-    @media (max-width: 768px) {
-      font-size: 40px;
-    }
-  }
-
-  &__subtitle {
-    text-align: left;
-    font-size: 20px;
-    color: $color-text-default;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
-  }
-
-  &__examples{
+  &__examples {
     display: flex;
     flex-direction: column;
 
@@ -40,14 +16,14 @@
   }
 }
 
-.toasts-primary{
+.toasts-primary {
   display: grid;
   align-items: center;
   grid-template-columns: 170px 170px;
   grid-template-rows: 1fr 1fr;
   gap: 40px;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }

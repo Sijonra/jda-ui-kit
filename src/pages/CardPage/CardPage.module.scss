@@ -1,34 +1,7 @@
 @import "../../styles/bundle.scss";
 
 .card-page {
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 20px 0;
-  font-family: $font-SF-PRO-DISPLAY;
-
-  &__title {
-    font-size: 54px;
-    text-align: center;
-    color: $color-text-default;
-    background-color: $color-page-shadow;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
-    @media (max-width: 768px) {
-      font-size: 40px;
-      width: 300px;
-      margin: 0 auto;
-    }
-  }
-
-  &__subtitle {
-    font-size: 20px;
-    text-align: center;
-    color: $color-text-default;
-
-    @media (max-width: 768px) {
-      font-size: 14px;
-    }
-  }
+  @include page-desktop;
 
   &__default {
     width: 100%;
@@ -38,10 +11,6 @@
     justify-content: center;
     column-gap: 20px;
     row-gap: 20px;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 200px;
-    }
   }
 }
 

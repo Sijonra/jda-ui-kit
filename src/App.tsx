@@ -1,11 +1,11 @@
 import "./App.scss";
-import CardPage from "./pages/CardPage/CardPage";
 import plus from "./assets/svg/plus.svg";
+import TitlePage from "./pages/TitlePage/TitlePage";
 console.log(plus);
 function App() {
   return (
     <>
-      <CardPage />
+      <TitlePage />
     </>
   );
 }
