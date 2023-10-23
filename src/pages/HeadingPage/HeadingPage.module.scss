@@ -1,6 +1,40 @@
-.heading-page{
-    font-size: 14px;
-    max-width: 768px;
-    margin: 0 auto;
-    font-family: $font-SF-PRO-TEXT;
+@import "../../styles/bundle.scss";
+
+.heading-page {
+  font-size: 14px;
+  padding: 40px 0;
+  max-width: 768px;
+  margin: 0 auto;
+  font-family: $font-SF-PRO-TEXT;
+
+  &__title {
+    font-size: 54px;
+    margin-bottom: 40px;
+    text-align: left;
+    color: $color-text-default;
+    background-color: $color-page-shadow;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      width: 300px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-align: left;
+    color: $color-text-default;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__examples {
+    span {
+      font-size: 11px;
+      color: $color-teal-base;
+    }
+  }
 }
