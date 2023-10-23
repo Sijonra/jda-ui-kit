@@ -36,7 +36,7 @@ const CardPage = () => {
         />
       </section>
       <h5 className={style["card-page__subtitle"]}>
-        Card with your own styles
+        Card with your own styles:
       </h5>
       <section
         className={style["custom-card"] + " " + style["card-page__custom"]}

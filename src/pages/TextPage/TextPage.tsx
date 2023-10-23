@@ -9,7 +9,7 @@ const TextPage = () => {
     <div className={style["text-page"]}>
       <Menu page="text" />
 
-      <h1 className={style["text-page__title"]}>UI Kit / Headings</h1>
+      <h1 className={style["text-page__title"]}>UI Kit / Text</h1>
       <h5 className={style["text-page__subtitle"]}>Types of text:</h5>
 
       <section className={style["text-page__text"]}>
