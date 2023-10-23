@@ -60,7 +60,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
         <h2 className={style["menu__title"]}>DOCS MENU</h2>
         <nav className={style["nav"] + " " + style["menu__nav"]}>
           <ul className={style["nav__list"]}>
-            <Link to={"/"}>
+            <Link to={"/jda-ui-kit/"}>
               <li
                 className={
                   page === "title"
@@ -71,7 +71,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Title Page
               </li>
             </Link>
-            <Link to={"/heading"}>
+            <Link to={"/jda-ui-kit/heading"}>
               <li
                 className={
                   page === "headings"
@@ -82,7 +82,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Headings
               </li>
             </Link>
-            <Link to={"/text"}>
+            <Link to={"/jda-ui-kit/text"}>
               <li
                 className={
                   page === "text"
@@ -93,7 +93,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Text
               </li>
             </Link>
-            <Link to={"/paragraph"}>
+            <Link to={"/jda-ui-kit/paragraph"}>
               <li
                 className={
                   page === "paragraph"
@@ -104,7 +104,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Paragraphs
               </li>
             </Link>
-            <Link to={"/button"}>
+            <Link to={"/jda-ui-kit/button"}>
               <li
                 className={
                   page === "buttons"
@@ -115,7 +115,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Buttons
               </li>
             </Link>
-            <Link to={"/card"}>
+            <Link to={"/jda-ui-kit/card"}>
               <li
                 className={
                   page === "cards"
@@ -126,7 +126,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Cards
               </li>
             </Link>
-            <Link to={"/badge"}>
+            <Link to={"/jda-ui-kit/badge"}>
               <li
                 className={
                   page === "badges"
@@ -137,7 +137,7 @@ const Menu: FC<MenuProps> = ({ page }) => {
                 Badges
               </li>
             </Link>
-            <Link to={"/toast"}>
+            <Link to={"/jda-ui-kit/toast"}>
               <li
                 className={
                   page === "toast"

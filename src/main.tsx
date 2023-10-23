@@ -14,35 +14,35 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/vite-react-router/",
+    path: "/jda-ui-kit/",
     element: <App />,
   },
   {
-    path: "/button",
+    path: "/jda-ui-kit/button",
     element: <ButtonPage />,
   },
   {
-    path: "/card",
+    path: "/jda-ui-kit/card",
     element: <CardPage />,
   },
   {
-    path: "/badge",
+    path: "/jda-ui-kit/badge",
     element: <BadgePage />,
   },
   {
-    path: "/heading",
+    path: "/jda-ui-kit/heading",
     element: <HeadingPage />,
   },
   {
-    path: "/paragraph",
+    path: "/jda-ui-kit/paragraph",
     element: <ParagraphPage />,
   },
   {
-    path: "/text",
+    path: "/jda-ui-kit/text",
     element: <TextPage />,
   },
   {
-    path: "/toast",
+    path: "/jda-ui-kit/toast",
     element: <ToastPage />,
   },
 ]);
