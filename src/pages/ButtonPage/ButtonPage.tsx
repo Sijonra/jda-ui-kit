@@ -44,19 +44,8 @@ const ButtonPage = () => {
         Also you can add your custom class name with your own styles and your
         custom svg icon:
       </h5>
-      <section
-        className={
-          style["button-page__variants"] + " " + ["button-page__classes"]
-        }
-      >
-        <Button type="primary" className={"button-page__classes_green"}>
-          Green Button
-        </Button>
-        <Button type="primary" className="button-page__classes_round">
-          Round Button
-        </Button>
-
-        <Button type="primary" className="button-page__classes_save">
+      <section className={style["button-page__variants"]}>
+        <Button type="primary">
           <svg
             width="16"
             height="16"
@@ -72,7 +61,7 @@ const ButtonPage = () => {
             />
           </svg>
         </Button>
-        <Button type="primary" className="button-page__classes_menu">
+        <Button type="primary">
           <svg
             width="16"
             height="16"

@@ -25,7 +25,7 @@
   &__button {
     position: absolute;
     top: 0;
-    left: 260px;
+    left: 100%;
     z-index: 101;
     display: flex;
     align-items: center;
@@ -34,12 +34,31 @@
     height: 60px;
     background: $color-page-bg-dark;
     cursor: pointer;
+
+    &_open {
+      @media (max-width: 768px) {
+        left: 0;
+        background: $color-black;
+      }
+    }
+
+    &_close {
+      @media (max-width: 768px) {
+        left: 100%;
+        // background: $color-black;
+      }
+    }
   }
 
-  &_close {
+  &__close {
     transform: translateX(-100%);
     transition: all 0.4s;
     position: absolute;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background: $color-black;
   }
 }
 

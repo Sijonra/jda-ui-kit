@@ -22,8 +22,12 @@ const Button: FC<ButtonProps> = ({
   children,
 }) => {
   return (
-    <div className={style.buttonOuter}>
-      <button className={style["button"] + " " + style[type] + " " + className}>
+    <div>
+      <button
+        className={
+          style["button"] + " " + style["button__" + type] + " " + className
+        }
+      >
         {plusLeft ? (
           <svg
             width="12"
