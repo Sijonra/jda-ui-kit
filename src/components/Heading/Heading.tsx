@@ -13,9 +13,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "jumbo" && (
         <h1
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -24,9 +22,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "oversized" && (
         <h2
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -35,9 +31,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "introduction" && (
         <h3
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -46,9 +40,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "key" && (
         <h4
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -57,9 +49,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "sub" && (
         <h5
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -68,9 +58,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "deep" && (
         <h5
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -79,9 +67,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "list-item" && (
         <h5
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -90,9 +76,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "low" && (
         <h5
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}
@@ -101,9 +85,7 @@ const Heading: FC<HeadingProps> = ({ className, type, children }) => {
       {type === "lowest" && (
         <h5
           className={
-            style["heading__item_" + type] +
-            " " +
-            style["heading__item_" + type]
+            style["heading__item_" + type] + " " + style["heading__item"]
           }
         >
           {children}

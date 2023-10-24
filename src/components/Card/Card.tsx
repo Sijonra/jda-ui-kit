@@ -22,7 +22,7 @@ const Card: FC<CardProps> = ({
         className={
           style["card"] +
           " " +
-          style["card_" + elevation.toString()] +
+          style["card__" + elevation.toString()] +
           " " +
           className
         }

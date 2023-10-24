@@ -20,7 +20,7 @@
     text-transform: uppercase;
   }
 
-  &_pill {
+  &__pill {
     font-size: 11px;
     border-radius: 0.73em;
     padding: 0 0.73em;
@@ -28,35 +28,35 @@
 }
 
 .solid {
-  &_neutral {
+  &__neutral {
     background-color: $color-text-default;
   }
 
-  &_green {
+  &__green {
     background-color: $color-green-base;
   }
 
-  &_blue {
+  &__blue {
     background-color: $color-blue-base;
   }
 
-  &_red {
+  &__red {
     background-color: $color-red-base;
   }
 
-  &_orange {
+  &__orange {
     background-color: $color-orange-base;
   }
 
-  &_purple {
+  &__purple {
     background-color: $color-purple-base;
   }
 
-  &_yellow {
+  &__yellow {
     background-color: $color-yellow-base;
   }
 
-  &_teal {
+  &__teal {
     background-color: $color-teal-base;
   }
 
@@ -66,7 +66,7 @@
 }
 
 .subtle {
-  &_neutral {
+  &__neutral {
     background-color: $color-border-default;
 
     .badge__text {
@@ -74,7 +74,7 @@
     }
   }
 
-  &_green {
+  &__green {
     background-color: $color-green-light;
 
     .badge__text {
@@ -82,7 +82,7 @@
     }
   }
 
-  &_blue {
+  &__blue {
     background-color: $color-blue-light;
 
     .badge__text {
@@ -90,7 +90,7 @@
     }
   }
 
-  &_red {
+  &__red {
     background-color: $color-red-light;
 
     .badge__text {
@@ -98,7 +98,7 @@
     }
   }
 
-  &_orange {
+  &__orange {
     background-color: $color-orange-light;
 
     .badge__text {
@@ -106,7 +106,7 @@
     }
   }
 
-  &_purple {
+  &__purple {
     background-color: $color-purple-light;
 
     .badge__text {
@@ -114,7 +114,7 @@
     }
   }
 
-  &_yellow {
+  &__yellow {
     background-color: $color-yellow-light;
 
     .badge__text {
@@ -122,7 +122,7 @@
     }
   }
 
-  &_teal {
+  &__teal {
     background-color: $color-teal-light;
 
     .badge__text {

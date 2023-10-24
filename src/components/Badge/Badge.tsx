@@ -17,9 +17,9 @@ const Badge: FC<BadgeProps> = ({ className, type, theme, color, text }) => {
         " " +
         style[theme] +
         " " +
-        style[theme + "_" + color] +
+        style[theme + "__" + color] +
         " " +
-        style["badge_" + type] +
+        style["badge__" + type] +
         " " +
         className
       }
