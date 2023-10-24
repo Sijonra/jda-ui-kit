@@ -8,11 +8,11 @@ interface MenuProps {
 }
 
 const Menu: FC<MenuProps> = ({ page }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <aside
       className={
-        isOpen ? style.menu : style["menu"] + " " + style["menu_close"]
+        isOpen ? style.menu : style["menu"] + " " + style["menu__close"]
       }
     >
       <div
