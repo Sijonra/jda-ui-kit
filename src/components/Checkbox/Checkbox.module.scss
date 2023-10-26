@@ -1,0 +1,11 @@
+@import "../../styles/bundle.scss";
+
+.checkbox {
+  input {
+    width: 16px;
+    height: 16px;
+  }
+  input[type="checkbox"] {
+    outline: 1px solid #0788de;
+  }
+}
