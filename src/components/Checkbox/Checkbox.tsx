@@ -1,15 +1,23 @@
 import style from "./Checkbox.module.scss";
-import { FC } from "react";
+import { FC, useState } from "react";
 
 interface InputProps {
-  type?: string;
+  label?: string;
+  isDisabled: boolean;
+  isChecked: boolean;
 }
 
-const Checkbox: FC<InputProps> = () => {
+const Checkbox: FC<InputProps> = ({ label, isDisabled, isChecked }) => {
+  const [checked, setChecked] = useState(isChecked);
+  const [disabled] = useState(isDisabled);
+  const handleClick = () => (!isDisabled ? setChecked(!checked) : "");
+
   return (
-    <div className={style["checkbox"]}>
-      <input type="checkbox" />
-    </div>
+    <label className={style["checkbox"]}>
+      {label}
+      <input type="checkbox" disabled={disabled} checked={checked} />
+      <span className={style["checkbox__item"]} onClick={handleClick}></span>
+    </label>
   );
 };
 
